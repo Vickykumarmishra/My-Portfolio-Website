@@ -62,9 +62,9 @@ export default function Home() {
     </tr>
 
     <tr>
-      <td>Jquery</td>
-      <td>Intermediate</td>
-      <td>1 years</td>
+      <td>Express</td>
+      <td>Beginner</td>
+      <td>0.5 years</td>
     </tr>
     <tr>
       <td>Html</td>
@@ -79,7 +79,7 @@ export default function Home() {
     </tr>
 
     <tr>
-      <td>Socket io</td>
+      <td>Mongodb</td>
       <td>Beginner</td>
       <td>0.5 years</td>
     </tr>
@@ -91,7 +91,7 @@ export default function Home() {
 
     </div>
     <div class="col">
-      <motion.img  whileHover={{scale:1.1}} src='formal black.jpg' className='img-thumbnail' style={{borderRadius:"50%",height:'25rem',border:'1rem solid black'}}></motion.img>
+      <motion.img  whileHover={{scale:1.1}} src='formal black.jpg' className='img-thumbnail' style={{borderRadius:"50%",height:'25rem',border:'0.1rem solid black'}}></motion.img>
     </div>
 
   </div>
@@ -114,8 +114,8 @@ export default function Home() {
     <div class="col">
     <div class="row" >
     <div class="col" >
-      <NavLink to='https://my-tourism-app-of-bihar.netlify.app/'><motion.h3  whileHover={{color:'yellow'}} animate={{scale:1.2}} transition={{duration:1 ,repeat:Infinity}} style={{marginTop:'2rem',color:'lightgreen'}}>Bihar Tourism Website</motion.h3></NavLink>
-     <NavLink to='https://my-tourism-app-of-bihar.netlify.app/'><motion.img whileHover={{scale:1.1}} src='buddha.jpg' className='img-thumbnail' style={{marginTop:'3rem',height:'20rem',width:'30rem'}} alt='....'/></NavLink>
+      <NavLink to='https://my-tourism-website-bihar.netlify.app/'><motion.h3  whileHover={{color:'yellow'}} animate={{scale:1.2}} transition={{duration:1 ,repeat:Infinity}} style={{marginTop:'2rem',color:'lightgreen'}}>Bihar Tourism Website</motion.h3></NavLink>
+     <NavLink to='https://my-tourism-website-bihar.netlify.app/'><motion.img whileHover={{scale:1.1}} src='buddha.jpg' className='img-thumbnail' style={{marginTop:'3rem',height:'20rem',width:'30rem'}} alt='....'/></NavLink>
      
       <div className="col" style={{marginTop:'1rem'}}>
      
