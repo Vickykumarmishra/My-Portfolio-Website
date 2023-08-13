@@ -109,13 +109,13 @@ export default function Home() {
 </div></center>
 
 
-<div class="container text-center">
+<div className="container text-center">
   <div class="row">
     <div class="col">
     <div class="row" >
     <div class="col" >
-      <NavLink to='https://tourism-of-bihar-by-vicky.netlify.app/'><motion.h3  whileHover={{color:'yellow'}} animate={{scale:1.2}} transition={{duration:1 ,repeat:Infinity}} style={{marginTop:'2rem',color:'lightgreen'}}>Bihar Tourism Website</motion.h3></NavLink>
-     <NavLink to='https://tourism-of-bihar-by-vicky.netlify.app/'><motion.img whileHover={{scale:1.1}} src='buddha.jpg' className='img-thumbnail' style={{marginTop:'3rem',height:'20rem',width:'30rem'}} alt='....'/></NavLink>
+      <NavLink to='https://tourism-of-bihar-by-vicky.netlify.app/'><motion.h3  whileHover={{color:'yellow'}} animate={{scale:1.1}} transition={{duration:1 ,repeat:Infinity}} style={{marginTop:'2rem',color:'lightgreen'}}>Tourism Website</motion.h3></NavLink>
+     <NavLink to='https://tourism-of-bihar-by-vicky.netlify.app/'><motion.img whileHover={{scale:1.1,transform:'rotatey(180deg)'}} transition={{duration:1}} src='buddha.jpg' className='img-thumbnail' style={{marginTop:'3rem',height:'20rem',width:'30rem'}} alt='....'/></NavLink>
      
       <div className="col" style={{marginTop:'1rem'}}>
      
@@ -126,8 +126,8 @@ export default function Home() {
     <div class="col">
     <div class="row">
     <div class="col" >
-      <NavLink to='https://vicky-touch-typing.netlify.app/'><motion.h3  whileHover={{color:'yellow'}} animate={{scale:1.2}} transition={{duration:1 ,repeat:Infinity}} style={{marginTop:'2rem',color:'lightgreen'}}>Touch Typing Website</motion.h3></NavLink>
-     <NavLink to='https://vicky-touch-typing.netlify.app/'><motion.img whileHover={{scale:1.1}} src='typing web.png' className='img-thumbnail' style={{marginTop:'3rem',height:'20rem'}} alt='....'/></NavLink>
+      <NavLink to='https://vicky-touch-typing.netlify.app/'><motion.h3  whileHover={{color:'yellow'}} animate={{scale:1.1}} transition={{duration:1 ,repeat:Infinity}} style={{marginTop:'2rem',color:'lightgreen'}}>Touch Typing Website</motion.h3></NavLink>
+     <NavLink to='https://vicky-touch-typing.netlify.app/'><motion.img whileHover={{scale:1.1,transform:'rotatey(180deg)'}} transition={{duration:1}}src='typist.jpg' className='img-thumbnail' style={{marginTop:'3rem',height:'20rem'}} alt='....'/></NavLink>
      
       <div className="col" style={{marginTop:'1rem'}}>
       
@@ -140,8 +140,8 @@ export default function Home() {
 
     <div class="row">
     <div class="col" >
-      <NavLink to='https://takcart-my-shopping-app.netlify.app'><motion.h3  whileHover={{color:'yellow'}} animate={{scale:1.2}} transition={{duration:1 ,repeat:Infinity}} style={{marginTop:'2rem',color:'lightgreen'}}>Shopping website</motion.h3></NavLink>
-     <NavLink to='https://takcart-my-shopping-app.netlify.app'><motion.img whileHover={{scale:1.1}} src='takcart portfolio.jpg' className='img-thumbnail' style={{marginTop:'3rem',height:'20rem'}} alt='....'/></NavLink>
+      <NavLink to='https://takcart-my-shopping-app.netlify.app'><motion.h3  whileHover={{color:'yellow'}} animate={{scale:1.1}} transition={{duration:1 ,repeat:Infinity}} style={{marginTop:'2rem',color:'lightgreen'}}>Shopping website</motion.h3></NavLink>
+     <NavLink to='https://takcart-my-shopping-app.netlify.app'><motion.img whileHover={{scale:1.1,transform:'rotatey(180deg)'}} transition={{duration:1 }} src='takcart portfolio.jpg' className='img-thumbnail' style={{marginTop:'3rem',height:'20rem'}} alt='....'/></NavLink>
      
       <div className="col" style={{marginTop:'1rem'}}>
       
