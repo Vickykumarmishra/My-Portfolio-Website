@@ -1,3 +1,3 @@
  My-Portfolio-Website
 
- Link of  website: https://my-portfolio-vicky-mishra.netlify.app/
+ Link of  website: https://portfolio-of-vicky-kumar-mishra.netlify.app/
