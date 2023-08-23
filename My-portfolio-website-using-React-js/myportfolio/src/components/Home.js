@@ -114,8 +114,8 @@ export default function Home() {
     <div class="col">
     <div class="row" >
     <div class="col" >
-      <NavLink to='https://tourism-of-bihar-by-vicky.netlify.app/'><motion.h3  whileHover={{color:'yellow'}}  transition={{duration:1 ,repeat:Infinity}} style={{marginTop:'2rem',color:'lightgreen'}}>Tourism Website</motion.h3></NavLink>
-     <NavLink to='https://tourism-of-bihar-by-vicky.netlify.app/'><motion.img whileHover={{scale:1.1,transform:'rotatey(180deg)'}} transition={{duration:1}} src='buddha.jpg' className='img-thumbnail' style={{marginTop:'3rem',height:'20rem',width:'30rem',boxShadow:'1px 1px 2px black, 0 0 25px white, 0 0 5px white'}} alt='....'/></NavLink>
+      <NavLink to='https://my-tourism-website-of-bihar.netlify.app/'><motion.h3  whileHover={{color:'yellow'}}  transition={{duration:1 ,repeat:Infinity}} style={{marginTop:'2rem',color:'lightgreen'}}>Tourism Website</motion.h3></NavLink>
+     <NavLink to='https://my-tourism-website-of-bihar.netlify.app/'><motion.img whileHover={{scale:1.1,transform:'rotatey(180deg)'}} transition={{duration:1}} src='buddha.jpg' className='img-thumbnail' style={{marginTop:'3rem',height:'20rem',width:'30rem',boxShadow:'1px 1px 2px black, 0 0 25px white, 0 0 5px white'}} alt='....'/></NavLink>
      
       <div className="col" style={{marginTop:'1rem'}}>
      
