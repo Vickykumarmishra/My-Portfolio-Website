@@ -41,7 +41,7 @@ I'm interested in freelance opportunities-especially front end projects.However,
 </div></center>
 {/**form ends here */}
 
-<center><NavLink to='/Home'>Home</NavLink></center>
+<center><NavLink to='/Home'><button className='btn btn-info' style={{marginTop:"2rem"}}>Home</button></NavLink></center>
 
     </div>
   )

@@ -22,24 +22,34 @@ export default function Home() {
         My portfolio showcases diverse projects that highlight my attention to detail and passion for intuitive interfaces. Let's collaborate to bring your vision to life.
 
         </p>
-         <NavLink to='https://github.com/Vickykumarmishra/My-CV/blob/main/cv%2028%20june%20latest.pdf'><motion.button  whileHover={{scale:1.2}}  className='btn btn-light' style={{backgroundColor:'black',color:'lightgreen'}}>My Resume</motion.button></NavLink>
-        <NavLink to="/Contact"><motion.button  whileHover={{scale:1.2}} className='btn btn-light' style={{backgroundColor:'black',color:'lightgreen'}}>contact me!</motion.button></NavLink>
+         <NavLink to='https://drive.google.com/file/d/1dXIOkcen-mEW5C9YF_5SRwcS8uK-1qjG/view?usp=sharing'><motion.button  whileHover={{scale:1.2}}  className='btn btn-light' style={{backgroundColor:'black',color:'lightgreen',marginTop:'1rem'}}>Resume</motion.button></NavLink>
+        <NavLink to="/Contact"><motion.button  whileHover={{scale:1.2}} className='btn btn-light' style={{backgroundColor:'black',color:'lightgreen',marginLeft:'1rem',marginTop:'1rem'}}>contact me!</motion.button></NavLink>
         </div></center>
   
     <Outlet/>  
 <hr></hr>
    
     
-    <div class="container-sm" style={{color:'white'}}>
+    <div className="container-sm" style={{color:'white',backgroundColor:'grey'}}>
     
    
 
 
-    <div class="container text-center">
-  <div class="row">
-    <div class="col">
+    <div className="container text-center" style={{marginBottom:'2rem'}}>
+  <div className="row">
+    <div className="col" style={{marginTop:'1rem',marginBottom:'2rem'}}>
     
-    <h3 style={{fontSize:"2em", color:'white',textShadow: '1px 1px 2px black, 0 0 25px lightgreen, 0 0 10px lightgreen'}}>My Skills:</h3>
+
+    <h3 style={{fontSize:"2rem", color:'white',textShadow: '1px 1px 2px black, 0 0 25px lightgreen, 0 0 10px lightgreen',marginBottom:"2rem"}}>My Skills:</h3>
+    <div className='container'>
+    <motion.img whileHover={{scale:'1.1'}} src='html-5.png' style={{height:'5rem'}}></motion.img>
+    <motion.img src='csss.png' whileHover={{scale:'1.1'}}  style={{height:'5rem'}}></motion.img>
+    <motion.img src='java-script.png' whileHover={{scale:'1.1'}}  style={{height:'5rem'}}></motion.img>
+    <motion.img src='logo192.png' whileHover={{scale:'1.1'}} style={{height:'5rem'}}></motion.img>
+    <motion.img src='bootstrap.png' whileHover={{scale:'1.1'}}   style={{height:'5rem'}}></motion.img>
+    <motion.img src="c++.png" whileHover={{scale:'1.1'}}  style={{height:'5rem',marginLeft:'0.4rem'}}></motion.img>
+    <motion.img src='redhux.svg' whileHover={{scale:'1.1'}}  style={{height:'5rem',marginLeft:'0.4rem'}}></motion.img></div>
+    {/* <h3 style={{fontSize:"2em", color:'white',textShadow: '1px 1px 2px black, 0 0 25px lightgreen, 0 0 10px lightgreen'}}>My Skills:</h3>
     <center><motion.table whileHover={{scale:1.1}} style={{color:'white',textShadow: '1px 1px 2px black, 0 0 25px lightgreen, 0 0 20px lightgreen'}}>
     
     <tr>
@@ -86,13 +96,15 @@ export default function Home() {
     
     
 
-    </motion.table></center><hr style={{color:'lightgreen'}}></hr>
+    </motion.table></center><hr style={{color:'lightgreen'}}></hr> */}
+
+
 
 
     </div>
-    <div class="col">
-      <motion.img  whileHover={{scale:1.1}} src='formal black.jpg' className='img-thumbnail' style={{borderRadius:"50%",height:'25rem',border:'0.1rem solid black'}}></motion.img>
-    </div>
+    {/* <div className="col" style={{marginTop:'1rem' ,marginBottom:'2rem'}}>
+      <center><img   src='formal cv image.png' className='img-fluid' style={{borderRadius:"100%",height:'15rem'}}></img></center>
+    </div> */}
 
   </div>
 </div>
@@ -114,8 +126,8 @@ export default function Home() {
     <div class="col">
     <div class="row" >
     <div class="col" >
-      <NavLink to='https://my-tourism-website-of-bihar.netlify.app/'><motion.h3  whileHover={{color:'yellow'}}  transition={{duration:1 ,repeat:Infinity}} style={{marginTop:'2rem',color:'lightgreen'}}>Tourism Website</motion.h3></NavLink>
-     <NavLink to='https://my-tourism-website-of-bihar.netlify.app/'><motion.img whileHover={{scale:1.1,transform:'rotatey(180deg)'}} transition={{duration:1}} src='buddha.jpg' className='img-thumbnail' style={{marginTop:'3rem',height:'20rem',width:'30rem',boxShadow:'1px 1px 2px black, 0 0 25px white, 0 0 5px white'}} alt='....'/></NavLink>
+      <NavLink to='https://tourism-web-with-react-by-vicky.vercel.app/'><motion.h3  whileHover={{color:'yellow'}}  transition={{duration:1 ,repeat:Infinity}} style={{marginTop:'2rem',color:'lightgreen'}}>Tourism Website</motion.h3></NavLink>
+     <NavLink to='https://tourism-web-with-react-by-vicky.vercel.app/'><motion.img whileHover={{scale:1.1,transform:'rotatey(180deg)'}} transition={{duration:1}} src='buddha.jpg' className='img-thumbnail' style={{marginTop:'3rem',height:'20rem',width:'30rem',boxShadow:'1px 1px 2px black, 0 0 25px white, 0 0 5px white'}} alt='....'/></NavLink>
      
       <div className="col" style={{marginTop:'1rem'}}>
      
@@ -126,8 +138,8 @@ export default function Home() {
     <div class="col">
     <div class="row">
     <div class="col" >
-      <NavLink to='https://vicky-touch-typing.netlify.app/'><motion.h3  whileHover={{color:'yellow'}}  transition={{duration:1 ,repeat:Infinity}} style={{marginTop:'2rem',color:'lightgreen'}}>Typing Website</motion.h3></NavLink>
-     <NavLink to='https://vicky-touch-typing.netlify.app/'><motion.img whileHover={{scale:1.1,transform:'rotatey(180deg)'}} transition={{duration:1}}src='typist.jpg' className='img-thumbnail' style={{marginTop:'3rem',height:'20rem',boxShadow:'1px 1px 2px black, 0 0 25px white, 0 0 5px white'}} alt='....'/></NavLink>
+      <NavLink to='https://typing-web-by-vicky.netlify.app/'><motion.h3  whileHover={{color:'yellow'}}  transition={{duration:1 ,repeat:Infinity}} style={{marginTop:'2rem',color:'lightgreen'}}>Typing Website</motion.h3></NavLink>
+     <NavLink to='https://typing-web-by-vicky.netlify.app/'><motion.img whileHover={{scale:1.1,transform:'rotatey(180deg)'}} transition={{duration:1}}src='typist.jpg' className='img-thumbnail' style={{marginTop:'3rem',height:'20rem',boxShadow:'1px 1px 2px black, 0 0 25px white, 0 0 5px white'}} alt='....'/></NavLink>
      
       <div className="col" style={{marginTop:'1rem'}}>
       

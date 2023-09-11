@@ -4,15 +4,15 @@ import { motion } from 'framer-motion'
 import Contact from './Contact'
 export default function Navbar() {
   return (
-    <div style={{background:'lightgreen',marginRight:'0rem'}} >
+    <div style={{background:'lightgreen'}} >
 
 
       {/**Navbar starts Here*/}
 
-<nav className="navbar navbar-light bg-light"  >
+<nav className="navbar navbar-light " style={{marginRight:"orem"}} >
   <div className="container-fluid" style={{background:'lightgreen'}}>
     <BrowserRouter>
-    <NavLink className="navbar-brand" to="/Home" ><b>myPortfolio</b></NavLink>
+    <NavLink className="navbar-brand" to="/Home" ><b>MyPortfolio</b></NavLink>
     <div>
     <NavLink  to="https://www.linkedin.com/in/vicky-kumar-mishra" ><motion.img src='linkedin.png'whileHover={{scale:1.2}} style={{height:'1.5rem' ,float:'right',border:'0.1em solid lightgreen'}}></motion.img></NavLink>
 
