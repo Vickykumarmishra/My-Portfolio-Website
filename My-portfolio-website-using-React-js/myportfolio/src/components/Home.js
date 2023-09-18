@@ -1,10 +1,21 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { NavLink, Outlet } from 'react-router-dom'
-
+import Swal from "sweetalert2";
 export default function Home() {
 
- 
+ function handleclick(){
+
+  Swal.fire({
+    title: 'Hey!',
+    text: 'You are on same website for which you are looking.',
+    imageUrl: 'portfool.jpg',
+    imageWidth: 400,
+    imageHeight: 200,
+    imageAlt: 'Custom image',
+  })
+
+ }
   
 
   return (
@@ -100,8 +111,8 @@ export default function Home() {
 
     <div class="row">
     <div class="col" >
-      <NavLink to='https://my-portfolio-website-md9p.vercel.app'><motion.h3 data-aos="fade-up" data-aos-duration="1500" whileHover={{color:'yellow'}}  transition={{duration:1 ,repeat:Infinity}} style={{marginTop:'2rem',color:'lightgreen'}}>portfolio Website</motion.h3></NavLink>
-     <NavLink to='https://my-portfolio-website-md9p.vercel.app'><img data-aos="fade-up" data-aos-duration="1500" src='portfool.jpg' className='img-thumbnail' style={{marginTop:'3rem',height:'20rem',boxShadow:'1px 1px 2px black, 0 0 25px white, 0 0 5px white'}} alt='....'/></NavLink>
+      <motion.h3 data-aos="fade-up" data-aos-duration="1500" whileHover={{color:'yellow'}}  transition={{duration:1 ,repeat:Infinity}} style={{marginTop:'2rem',color:'lightgreen'}} onClick={handleclick}>portfolio Website</motion.h3>
+     <img data-aos="fade-up" data-aos-duration="1500" src='portfool.jpg' className='img-thumbnail' style={{marginTop:'3rem',height:'20rem',boxShadow:'1px 1px 2px black, 0 0 25px white, 0 0 5px white'}} alt='....' onClick={handleclick}/>
      
       <div className="col" style={{marginTop:'1rem'}}>
       
