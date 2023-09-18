@@ -22,7 +22,7 @@ export default function Home() {
         My portfolio showcases diverse projects that highlight my attention to detail and passion for intuitive interfaces. Let's collaborate to bring your vision to life.
 
         </p>
-         <NavLink to='https://drive.google.com/file/d/1dXIOkcen-mEW5C9YF_5SRwcS8uK-1qjG/view?usp=sharing'><motion.button  whileHover={{scale:1.2}}  className='btn btn-light' style={{backgroundColor:'black',color:'lightgreen',marginTop:'1rem'}}>Resume</motion.button></NavLink>
+         <NavLink to='https://drive.google.com/file/d/1Mgzm8k1LcTLTs-9KwjPrwQ6IoJrYUAX1/view?usp=sharing'><motion.button  whileHover={{scale:1.2}}  className='btn btn-light' style={{backgroundColor:'black',color:'lightgreen',marginTop:'1rem'}}>Resume</motion.button></NavLink>
         <NavLink to="/Contact"><motion.button  whileHover={{scale:1.2}} className='btn btn-light' style={{backgroundColor:'black',color:'lightgreen',marginLeft:'1rem',marginTop:'1rem'}}>contact me!</motion.button></NavLink>
         </div></center>
   
@@ -100,8 +100,8 @@ export default function Home() {
 
     <div class="row">
     <div class="col" >
-      <NavLink to='https://takcart-my-shopping-app.netlify.app'><motion.h3 data-aos="fade-up" data-aos-duration="1500" whileHover={{color:'yellow'}}  transition={{duration:1 ,repeat:Infinity}} style={{marginTop:'2rem',color:'lightgreen'}}>Shopping website</motion.h3></NavLink>
-     <NavLink to='https://takcart-my-shopping-app.netlify.app'><img data-aos="fade-up" data-aos-duration="1500" src='takcart portfolio.jpg' className='img-thumbnail' style={{marginTop:'3rem',height:'20rem',boxShadow:'1px 1px 2px black, 0 0 25px white, 0 0 5px white'}} alt='....'/></NavLink>
+      <NavLink to='https://my-portfolio-website-md9p.vercel.app'><motion.h3 data-aos="fade-up" data-aos-duration="1500" whileHover={{color:'yellow'}}  transition={{duration:1 ,repeat:Infinity}} style={{marginTop:'2rem',color:'lightgreen'}}>portfolio Website</motion.h3></NavLink>
+     <NavLink to='https://my-portfolio-website-md9p.vercel.app'><img data-aos="fade-up" data-aos-duration="1500" src='portfool.jpg' className='img-thumbnail' style={{marginTop:'3rem',height:'20rem',boxShadow:'1px 1px 2px black, 0 0 25px white, 0 0 5px white'}} alt='....'/></NavLink>
      
       <div className="col" style={{marginTop:'1rem'}}>
       
