@@ -2,6 +2,9 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { NavLink, Outlet } from 'react-router-dom'
 import Swal from "sweetalert2";
+
+import Typewriter from 'typewriter-effect';  //https://www.npmjs.com/package/typewriter-effect
+
 export default function Home() {
 
  function handleclick(){
@@ -22,10 +25,20 @@ export default function Home() {
   return (
     <div>
   
-        <motion.h1  
-         style={{color:'lightgreen'}}> <b >Hello, I am </b></motion.h1><hr/><br></br>
-        <h1  
-         style={{color:'white',fontSize:'5rem',fontFamily:'tahoma',textShadow: '1px 1px 2px black, 0 0 25px yellow, 0 0 5px yellow'}} data-aos="fade-left"  data-aos-duration="2000">Vicky Kumar Mishra</h1>
+  <div className='container' style={{color:'white',fontSize:'4rem',fontFamily:'tahoma',textShadow: '1px 1px 2px black, 0 0 25px yellow, 0 0 5px yellow'}}>
+         <h1  
+         style={{color:'lightgreen'}}> <b >Hello, I am </b></h1>
+        {/*<h1  
+         style={{color:'white',fontSize:'5rem',fontFamily:'tahoma',textShadow: '1px 1px 2px black, 0 0 25px yellow, 0 0 5px yellow'}} data-aos="fade-left"  data-aos-duration="2000">Vicky Kumar Mishra</h1> */}
+
+<Typewriter
+      options={{
+        strings: ['Vicky Kumar mishra', ' a Frontend developer'],
+        autoStart: true,
+        loop: true,
+      }}
+     
+    /></div>
         <center>
 
         <div  style={{marginRight:'5rem',marginLeft:'5rem'}} className='shadow-lg p-3 mb-5 bg-black rounded'>
@@ -42,23 +55,24 @@ export default function Home() {
 <hr></hr>
    
     
-    <div className="container-sm" style={{color:'white',backgroundColor:'grey'}}>
+    <div className="container-sm" style={{color:'white',backgroundColor:'grey',borderRadius:'1rem'}}>
     
    
 
 
-    <div className="container text-center" style={{marginBottom:'2rem'}}>
-  <div className="row" data-aos="fade-up"  data-aos-duration="1500">
-    <div className="col" style={{marginTop:'1rem',marginBottom:'2rem' }}>
+    <div className="container text-center" style={{marginBottom:'2rem' }}>
+  <div className="row" data-aos="fade-up"  data-aos-duration="1500" style={{ }}>
+    <div className="col" style={{marginTop:'1rem',marginBottom:'2rem'}}>
     
 
     <h3 style={{fontSize:"2rem", color:'white',textShadow: '1px 1px 2px black, 0 0 25px lightgreen, 0 0 10px lightgreen',marginBottom:"2rem"}}>My Skills:</h3>
-    <div className='container' >
-    <img whileHover={{scale:'1.1'}} src='html-5.png' style={{height:'5rem'}}></img>
-    <img src='csss.png' whileHover={{scale:'1.1'}}  style={{height:'5rem'}}></img>
-    <img src='java-script.png' whileHover={{scale:'1.1'}}  style={{height:'5rem'}}></img>
-    <img src='logo192.png' whileHover={{scale:'1.1'}} style={{height:'5rem'}}></img>
-    <img src='bootstrap.png' whileHover={{scale:'1.1'}}   style={{height:'5rem'}}></img>
+    <div className='container'  >
+    <img whileHover={{scale:'1.1'}} src='html-5.png' style={{height:'5rem',marginLeft:'0.4rem'}}></img>
+    
+    <img src='csss.png' whileHover={{scale:'1.1'}}  style={{height:'5rem',marginLeft:'0.4rem'}}></img>
+    <img src='java-script.png' whileHover={{scale:'1.1'}}  style={{height:'5rem',marginLeft:'0.4rem'}}></img>
+    <img src='logo192.png' whileHover={{scale:'1.1'}} style={{height:'5rem',marginLeft:'0.4rem'}}></img>
+    <img src='bootstrap.png' whileHover={{scale:'1.1'}}   style={{height:'5rem',marginLeft:'0.4rem'}}></img>
     <img src="c++.png" whileHover={{scale:'1.1'}}  style={{height:'5rem',marginLeft:'0.4rem'}}></img>
     <img src='redhux.svg' whileHover={{scale:'1.1'}}  style={{height:'5rem',marginLeft:'0.4rem'}}></img></div>
     
@@ -74,10 +88,8 @@ export default function Home() {
 </div>
 
 {/** projects*/}
-<h3   data-aos="fade-up" data-aos-duration="1500" style={{fontSize:"2em", color:'white',textShadow: '1px 1px 2px black, 0 0 25px lightgreen, 0 0 10px lightgreen'}}>My Projects:</h3>
+<h3   data-aos="fade-up" data-aos-duration="1500" style={{fontSize:"2em", color:'white',textShadow: '1px 1px 2px black, 0 0 25px lightgreen, 0 0 10px lightgreen',marginBottom:'2rem'}}>My Projects:</h3>
 <center><div class="container text-center" style={{color:'lightgreen'}}>
-
-  
 
   
 
@@ -88,19 +100,21 @@ export default function Home() {
   <div class="row">
     <div class="col">
     <div class="row" >
-    <div class="col" >
-      <NavLink to='https://tourism-web-with-react-by-vicky.vercel.app/'><motion.h3  data-aos="fade-up" data-aos-duration="1500" whileHover={{color:'yellow'}}  transition={{duration:1 ,repeat:Infinity}} style={{marginTop:'2rem',color:'lightgreen'}}><u>Tourism Website</u></motion.h3></NavLink>
-     <NavLink to='https://tourism-web-with-react-by-vicky.vercel.app/'><img data-aos="fade-up" data-aos-duration="1500" src='buddha.jpg' className='img-thumbnail' style={{marginTop:'3rem',height:'20rem',width:'30rem',boxShadow:'1px 1px 2px black, 0 0 25px white, 0 0 5px white'}} alt='....'/></NavLink>
-     
+
+    <div className="col" style={{border:'0.1rem solid white',boxShadow:'1px 1px 2px black, 0 0 25px white, 0 0 5px white'}} data-aos="fade-up" data-aos-duration="1500">
+      <h3  data-aos="fade-up"    style={{color:'lightgreen'}}><u>Tourism Website</u></h3>
+     <img  src='buddha.jpg' className='img-fluid' style={{marginTop:'1rem',height:'20rem',width:'30rem'}} alt='....'></img>
+     <NavLink to='https://tourism-web-with-react-by-vicky.vercel.app/' ><button className='btn btn-info' style={{marginTop:'1rem',marginBottom:'1rem'}}><b>Click Here</b></button></NavLink>
     </div>
   </div>
     </div>
     <div class="col">
     <div class="row">
-    <div class="col" >
-      <NavLink to='https://typing-web-by-vicky.netlify.app/'><motion.h3  whileHover={{color:'yellow'}} data-aos="fade-up" data-aos-duration="1500" transition={{duration:1 ,repeat:Infinity}} style={{marginTop:'2rem',color:'lightgreen'}}><u>Typing Website</u></motion.h3></NavLink>
-     <NavLink to='https://typing-web-by-vicky.netlify.app/'><img data-aos="fade-up" data-aos-duration="1500" src='typist.jpg' className='img-thumbnail' style={{marginTop:'3rem',height:'20rem',boxShadow:'1px 1px 2px black, 0 0 25px white, 0 0 5px white'}} alt='....'/></NavLink>
-     
+
+    <div className="col" style={{border:'0.1rem solid white',boxShadow:'1px 1px 2px black, 0 0 25px white, 0 0 5px white'}} data-aos="fade-up" data-aos-duration="1500">
+     <h3   data-aos="fade-up"   style={{color:'lightgreen'}}><u>Typing Website</u></h3>
+     <img  src='typist.jpg' className='img-fluid' style={{marginTop:'1rem',height:'20rem'}} alt='....'/>
+     <NavLink to='https://my-touch-typing-app.vercel.app/' ><button className='btn btn-info' style={{marginTop:'1rem'}}><b>Click Here</b></button></NavLink>
       <div className="col" style={{marginTop:'1rem'}}>
       
     </div>
@@ -111,10 +125,10 @@ export default function Home() {
     <div class="col">
 
     <div class="row">
-    <div class="col" >
-      <motion.h3 data-aos="fade-up" data-aos-duration="1500" whileHover={{color:'yellow'}}  transition={{duration:1 ,repeat:Infinity}} style={{marginTop:'2rem',color:'lightgreen'}} onClick={handleclick}><u>portfolio Website</u></motion.h3>
-     <img data-aos="fade-up" data-aos-duration="1500" src='portfool.jpg' className='img-thumbnail' style={{marginTop:'3rem',height:'20rem',boxShadow:'1px 1px 2px black, 0 0 25px white, 0 0 5px white'}} alt='....' onClick={handleclick}/>
-     
+    <div className="col" style={{border:'0.1rem solid white',boxShadow:'1px 1px 2px black, 0 0 25px white, 0 0 5px white'}} data-aos="fade-up" data-aos-duration="1500" >
+      <h3  style={{color:'lightgreen'}} ><u>Portfolio Website</u></h3>
+     <img src='portfool.jpg' className='img-fluid' style={{marginTop:'1rem',height:'20rem',boxShadow:'1px 1px 2px black, 0 0 25px white, 0 0 5px white'}} alt='....' />
+     <button className='btn btn-info' style={{marginTop:'1rem'}} onClick={handleclick}><b>Click Here</b></button>
       <div className="col" style={{marginTop:'1rem'}}>
       
     </div>
