@@ -68,8 +68,9 @@ export default function Home() {
     <h3 style={{fontSize:"2rem", color:'white',textShadow: '1px 1px 2px black, 0 0 25px lightgreen, 0 0 10px lightgreen',marginBottom:"2rem"}}>My Skills:</h3>
     <div className='container'  >
     <img whileHover={{scale:'1.1'}} src='html-5.png' style={{height:'5rem',marginLeft:'0.4rem'}}></img>
-    
+
     <img src='csss.png' whileHover={{scale:'1.1'}}  style={{height:'5rem',marginLeft:'0.4rem'}}></img>
+  
     <img src='java-script.png' whileHover={{scale:'1.1'}}  style={{height:'5rem',marginLeft:'0.4rem'}}></img>
     <img src='logo192.png' whileHover={{scale:'1.1'}} style={{height:'5rem',marginLeft:'0.4rem'}}></img>
     <img src='bootstrap.png' whileHover={{scale:'1.1'}}   style={{height:'5rem',marginLeft:'0.4rem'}}></img>
@@ -102,7 +103,7 @@ export default function Home() {
     <div class="row" >
 
     <div className="col" style={{border:'0.1rem solid white',boxShadow:'1px 1px 2px black, 0 0 25px white, 0 0 5px white'}} data-aos="fade-up" data-aos-duration="1500">
-      <h3  data-aos="fade-up"    style={{color:'lightgreen'}}><u>Tourism Website</u></h3>
+      <h3  data-aos="fade-up"    style={{color:'#42ddf5'}}>Tourism Website</h3>
      <img  src='buddha.jpg' className='img-fluid' style={{marginTop:'1rem',height:'20rem',width:'30rem'}} alt='....'></img>
      <NavLink to='https://tourism-web-with-react-by-vicky.vercel.app/' ><button className='btn btn-info' style={{marginTop:'1rem',marginBottom:'1rem'}}><b>Click Here</b></button></NavLink>
     </div>
@@ -112,7 +113,7 @@ export default function Home() {
     <div class="row">
 
     <div className="col" style={{border:'0.1rem solid white',boxShadow:'1px 1px 2px black, 0 0 25px white, 0 0 5px white'}} data-aos="fade-up" data-aos-duration="1500">
-     <h3   data-aos="fade-up"   style={{color:'lightgreen'}}><u>Typing Website</u></h3>
+     <h3   data-aos="fade-up"   style={{color:'#42ddf5'}}>Typing Website</h3>
      <img  src='typist.jpg' className='img-fluid' style={{marginTop:'1rem',height:'20rem'}} alt='....'/>
      <NavLink to='https://my-touch-typing-app.vercel.app/' ><button className='btn btn-info' style={{marginTop:'1rem'}}><b>Click Here</b></button></NavLink>
       <div className="col" style={{marginTop:'1rem'}}>
@@ -126,8 +127,8 @@ export default function Home() {
 
     <div class="row">
     <div className="col" style={{border:'0.1rem solid white',boxShadow:'1px 1px 2px black, 0 0 25px white, 0 0 5px white'}} data-aos="fade-up" data-aos-duration="1500" >
-      <h3  style={{color:'lightgreen'}} ><u>Portfolio Website</u></h3>
-     <img src='portfool.jpg' className='img-fluid' style={{marginTop:'1rem',height:'20rem',boxShadow:'1px 1px 2px black, 0 0 25px white, 0 0 5px white'}} alt='....' />
+      <h3  style={{color:'#42ddf5'}} >Portfolio Website</h3>
+     <img src='portfool.jpg' className='img-fluid' style={{marginTop:'1rem',height:'20rem'}} alt='....' />
      <button className='btn btn-info' style={{marginTop:'1rem'}} onClick={handleclick}><b>Click Here</b></button>
       <div className="col" style={{marginTop:'1rem'}}>
       
