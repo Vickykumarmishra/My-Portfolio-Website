@@ -47,8 +47,8 @@ export default function Home() {
         My portfolio showcases diverse projects that highlight my attention to detail and passion for intuitive interfaces. Let's collaborate to bring your vision to life.
 
         </p>
-         <NavLink to='https://drive.google.com/file/d/1Mgzm8k1LcTLTs-9KwjPrwQ6IoJrYUAX1/view?usp=sharing'><motion.button  whileHover={{scale:1.2}}  className='btn btn-light' style={{backgroundColor:'black',color:'lightgreen',marginTop:'1rem'}}>Resume</motion.button></NavLink>
-        <NavLink to="/Contact"><motion.button  whileHover={{scale:1.2}} className='btn btn-light' style={{backgroundColor:'black',color:'lightgreen',marginLeft:'1rem',marginTop:'1rem'}}>contact me!</motion.button></NavLink>
+         <NavLink to='https://drive.google.com/file/d/1Mgzm8k1LcTLTs-9KwjPrwQ6IoJrYUAX1/view?usp=sharing'><motion.button  whileHover={{scale:1.2}}  className='btn btn-light' style={{backgroundColor:'black',color:'lightgreen',marginLeft:'1rem' ,marginTop:'1rem'}}>Resume</motion.button></NavLink>
+        <NavLink to="/Contact"><motion.button  whileHover={{scale:1.2}} className='btn btn-light' style={{backgroundColor:'black',color:'lightgreen',marginLeft:'1rem',marginTop:'1rem'}}>contact!</motion.button></NavLink>
         </div></center>
   
     <Outlet/>  
@@ -67,15 +67,15 @@ export default function Home() {
 
     <h3 style={{fontSize:"2rem", color:'white',textShadow: '1px 1px 2px black, 0 0 25px lightgreen, 0 0 10px lightgreen',marginBottom:"2rem"}}>My Skills:</h3>
     <div className='container'  >
-    <img whileHover={{scale:'1.1'}} src='html-5.png' style={{height:'5rem',marginLeft:'0.4rem'}}></img>
+    <img whileHover={{scale:'1.1'}} src='html-5.png' style={{height:'5rem',marginLeft:'0.4rem',marginBottom:'0.4rem'}}></img>
 
-    <img src='csss.png' whileHover={{scale:'1.1'}}  style={{height:'5rem',marginLeft:'0.4rem'}}></img>
+    <img src='csss.png' whileHover={{scale:'1.1'}}  style={{height:'5rem',marginLeft:'0.4rem',marginBottom:'0.4rem'}}></img>
   
-    <img src='java-script.png' whileHover={{scale:'1.1'}}  style={{height:'5rem',marginLeft:'0.4rem'}}></img>
-    <img src='logo192.png' whileHover={{scale:'1.1'}} style={{height:'5rem',marginLeft:'0.4rem'}}></img>
-    <img src='bootstrap.png' whileHover={{scale:'1.1'}}   style={{height:'5rem',marginLeft:'0.4rem'}}></img>
-    <img src="c++.png" whileHover={{scale:'1.1'}}  style={{height:'5rem',marginLeft:'0.4rem'}}></img>
-    <img src='redhux.svg' whileHover={{scale:'1.1'}}  style={{height:'5rem',marginLeft:'0.4rem'}}></img></div>
+    <img src='java-script.png' whileHover={{scale:'1.1'}}  style={{height:'5rem',marginLeft:'0.4rem',marginBottom:'0.4rem'}}></img>
+    <img src='logo192.png' whileHover={{scale:'1.1'}} style={{height:'5rem',marginLeft:'0.4rem',marginBottom:'0.4rem'}}></img>
+    <img src='bootstrap.png' whileHover={{scale:'1.1'}}   style={{height:'5rem',marginLeft:'0.4rem',marginBottom:'0.4rem'}}></img>
+    <img src="c++.png" whileHover={{scale:'1.1'}}  style={{height:'5rem',marginLeft:'0.4rem',marginBottom:'0.4rem'}}></img>
+    <img src='redhux.svg' whileHover={{scale:'1.1'}}  style={{height:'5rem',marginLeft:'0.4rem',marginBottom:'0.4rem'}}></img></div>
     
 
 
