@@ -65,7 +65,7 @@ else{
   }
 
   return (
-    <div>
+    <div >
      <center><h1 style={{color:'lightgreen',marginTop:'1rem'}}><b>Contact Me</b></h1></center> <br></br>
      {/* <center><p style={{color:'white'}}>
 I'm interested in freelance opportunities-especially front end projects.However, if you have other request or question, don't hesitate to contact me.
@@ -73,7 +73,7 @@ I'm interested in freelance opportunities-especially front end projects.However,
 
      {/**form start */}
 <form ref={form} onSubmit={handleSubmit}>
-<center><div  style={{width:'25rem' , border:'0.1rem solid green', padding:'2rem'}}   >
+<center><div  style={{width:'25rem' , border:'0.1rem solid green', padding:'2rem',boxShadow:'1px 1px 2px white, 0 0 25px white, 0 0 5px white',backgroundColor:'black'}}   >
      <div className="input-group">
      <div className="input-group mb-3">
   <span className="input-group-text" id="inputGroup-sizing-default">FullName</span>
