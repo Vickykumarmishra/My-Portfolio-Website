@@ -20,8 +20,9 @@ export default function Contact() {
 const {values,errors,touched,handleBlur,handleChange,handleSubmit}=useFormik({
 initialValues:initialValues,
 validationSchema:signUpSchema,
-onSubmit:(values)=>{
+onSubmit:(values,action)=>{
 console.log(values);
+action.resetForm();
 }
 })
 console.log(errors)
@@ -91,7 +92,7 @@ I'm interested in freelance opportunities-especially front end projects.However,
 
 <div class="mb-3">
   {/* <label for="exampleFormControlInput1" className="form-label" style={{color:'white'}}>Email address</label> */}
-  <input type="email" value={values.useremail} onChange={handleChange} onBlur={handleBlur}  class="form-control" id="exampleFormControlInput1" name="useremail" placeholder="Enter your email here"/><br></br>
+  <input type="email" value={values.useremail} onChange={handleChange} onBlur={handleBlur}  class="form-control" id="exampleFormControlInput1" name="useremail" placeholder="Enter your email here"/>
 </div>
 {errors.useremail && touched.useremail?(<p  style={{color:'red'}}className='form-error'>{errors.useremail}</p>):null}
 <div class="mb-3">
