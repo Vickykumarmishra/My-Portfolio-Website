@@ -3,24 +3,51 @@ import { motion } from 'framer-motion'
 import { NavLink } from 'react-router-dom'
 import { useRef } from 'react'
 import Swal from 'sweetalert2'
-//import emailjs from 'emailjs-com'
+import { useFormik } from 'formik'
 import emailjs from '@emailjs/browser';
+import * as yup from "yup";
+import { signUpSchema } from '../schemas/Index'
+const initialValues={
+
+name:"",
+useremail:"",
+mobile:"",
+message:"",
+}
+
 export default function Contact() {
-  const form = useRef();
+
+const {values,errors,touched,handleBlur,handleChange,handleSubmit}=useFormik({
+initialValues:initialValues,
+validationSchema:signUpSchema,
+onSubmit:(values)=>{
+console.log(values);
+}
+})
+console.log(errors)
+
+const form = useRef();
 function handleClick(e){
-e.preventDefault();
+// e.preventDefault();
 let verify=document.getElementById('inputGroup-sizing-default').value;
 let verify2=document.getElementById('exampleFormControlTextarea1').value;
+let verify3=document.getElementById('exampleFormControlInput1').value;
 
-if(verify==''||verify2==''){
-
+if(verify==''||verify2==''||verify3==''){
+ 
   Swal.fire({
     icon: 'error',
     title: 'Oops...',
     text: 'All details must be filled before sending',
     
   })
+
+  
+ 
 }
+
+
+
 else{
 
   emailjs.sendForm('service_uh16qbn','template_gy42hqt',form.current,'FzQ82uEVhnavLDi3H').then((result) => {
@@ -30,7 +57,7 @@ else{
       'I will contact you soon 😊',
       'success'
     )
-}, (error) => {
+}, (error) => {  
     console.log(error.text);
 });
     }
@@ -44,32 +71,36 @@ I'm interested in freelance opportunities-especially front end projects.However,
      </p></center> */}
 
      {/**form start */}
-<form ref={form}>
+<form ref={form} onSubmit={handleSubmit}>
 <center><div  style={{width:'25rem' , border:'0.1rem solid green', padding:'2rem'}}   >
      <div className="input-group">
      <div className="input-group mb-3">
   <span className="input-group-text" id="inputGroup-sizing-default">FullName</span>
-  <input type="text" name="name" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"/>
+  <input type="text" name="name" value={values.name} onChange={handleChange} onBlur={handleBlur} className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"/>
+ 
 </div>
 </div>
-<br></br>
+{errors.name && touched.name?(<p  style={{color:'red'}}className='form-error'>{errors.name}</p>):null}
+
 <div className="input-group mb-3">
   <span className="input-group-text" id="inputGroup-sizing-default">Mobile No</span>
-  <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"/>
+  <input type="text" value={values.mobile} onChange={handleChange} onBlur={handleBlur}  name="mobile" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"/>
 </div>
-
+{errors.mobile && touched.mobile?(<p  style={{color:'red'}}className='form-error'>{errors.mobile}</p>):null}
 <br></br>
 
 <div class="mb-3">
-  <label for="exampleFormControlInput1" className="form-label" style={{color:'white'}}>Email address</label>
-  <input type="email" class="form-control" id="exampleFormControlInput1" name="user email" placeholder="name@example.com"/><br></br>
+  {/* <label for="exampleFormControlInput1" className="form-label" style={{color:'white'}}>Email address</label> */}
+  <input type="email" value={values.useremail} onChange={handleChange} onBlur={handleBlur}  class="form-control" id="exampleFormControlInput1" name="useremail" placeholder="Enter your email here"/><br></br>
 </div>
+{errors.useremail && touched.useremail?(<p  style={{color:'red'}}className='form-error'>{errors.useremail}</p>):null}
 <div class="mb-3">
-  <label for="exampleFormControlTextarea1" className="form-label" style={{color:'white'}}>Message</label>
-  <textarea class="form-control" id="exampleFormControlTextarea1" name="message" rows="3"></textarea>
+  <label for="exampleFormControlTextarea1" className="form-label" style={{color:'white'}} >Write your message</label>
+  <textarea value={values.message} onChange={handleChange} onBlur={handleBlur}  class="form-control" id="exampleFormControlTextarea1" name="message" rows="3"></textarea>
 </div>
+{errors.message && touched.message?(<p  style={{color:'red'}}className='form-error'>{errors.message}</p>):null}
 <br></br>
-<p style={{backgroundColor:'lightgreen'}} whileHover={{scale:1.2}}  onClick={handleClick}><button style={{backgroundColor:'lightgreen',border:"0.1rem solid lightgreen"}}><b>Send</b></button></p>
+<p style={{backgroundColor:'lightgreen'}} whileHover={{scale:1.2}}  onClick={handleClick}><button style={{backgroundColor:'lightgreen',border:"0.1rem solid lightgreen"}}><b><u>Send</u></b></button></p>
 
 </div></center></form>
 {/**form ends here */}
