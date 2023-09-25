@@ -41,21 +41,21 @@ export default function Home() {
     /></div>
         <center>
 
-        <div  style={{marginRight:'5rem',marginLeft:'5rem'}} className='shadow-lg p-3 mb-5 bg-black rounded'>
-        <p style={{color:'lightgreen',fontFamily:'tahoma'}}>
+        <div  style={{marginRight:'5rem',marginLeft:'5rem'}} className=''>
+        <b><p style={{color:'lightgreen',fontFamily:'tahoma'}}>
         Welcome to my portfolio! I'm a frontend developer specializing in creating engaging and user-friendly web experiences. With expertise in HTML, CSS, and JavaScript, I transform ideas into functional websites using modern framework like React Js . 
         My portfolio showcases diverse projects that highlight my attention to detail and passion for intuitive interfaces. Let's collaborate to bring your vision to life.
 
-        </p>
-         <NavLink to='https://drive.google.com/file/d/1Mgzm8k1LcTLTs-9KwjPrwQ6IoJrYUAX1/view?usp=sharing'><motion.button  whileHover={{scale:1.2}}  className='btn btn-light' style={{backgroundColor:'black',color:'lightgreen',marginLeft:'1rem' ,marginTop:'1rem'}}>Resume</motion.button></NavLink>
-        <NavLink to="/Contact"><motion.button  whileHover={{scale:1.2}} className='btn btn-light' style={{backgroundColor:'black',color:'lightgreen',marginLeft:'1rem',marginTop:'1rem'}}>contact!</motion.button></NavLink>
+        </p></b>
+         <NavLink to='https://drive.google.com/file/d/1Mgzm8k1LcTLTs-9KwjPrwQ6IoJrYUAX1/view?usp=sharing'><motion.button  whileHover={{scale:1.2}}  className='btn btn-light' style={{backgroundColor:'yellow',color:'black',marginLeft:'1rem' ,marginTop:'1rem'}}><b>Resume</b></motion.button></NavLink>
+        <NavLink to="/Contact"><motion.button  whileHover={{scale:1.2}} className='btn btn-light' style={{backgroundColor:'yellow',color:'black',marginLeft:'1rem',marginTop:'1rem'}}><b>contact!</b></motion.button></NavLink>
         </div></center>
   
     <Outlet/>  
 <hr></hr>
    
     
-    <div className="container-sm" style={{color:'white',backgroundColor:'grey',borderRadius:'1rem'}}>
+    <div className="container-sm" style={{color:'white',backgroundColor:'',borderRadius:'1rem'}}>
     
    
 
@@ -103,7 +103,7 @@ export default function Home() {
     <div class="row" >
 
     <div className="col" style={{border:'0.1rem solid white',boxShadow:'1px 1px 2px black, 0 0 25px white, 0 0 5px white'}} data-aos="fade-up" data-aos-duration="1500">
-      <h3  data-aos="fade-up"    style={{color:'#42ddf5'}}>Tourism Website</h3>
+      <h3    style={{color:'lightgreen',marginTop:'0.5rem'}}>Tourism Website</h3>
      <img  src='buddha.jpg' className='img-fluid' style={{marginTop:'1rem',height:'20rem',width:'30rem'}} alt='....'></img>
      <NavLink to='https://tourism-web-with-react-by-vicky.vercel.app/' ><button className='btn btn-info' style={{marginTop:'1rem',marginBottom:'1rem'}}><b>Click Here</b></button></NavLink>
     </div>
@@ -113,7 +113,7 @@ export default function Home() {
     <div class="row">
 
     <div className="col" style={{border:'0.1rem solid white',boxShadow:'1px 1px 2px black, 0 0 25px white, 0 0 5px white'}} data-aos="fade-up" data-aos-duration="1500">
-     <h3   data-aos="fade-up"   style={{color:'#42ddf5'}}>Typing Website</h3>
+     <h3   style={{color:'lightgreen',marginTop:'0.5rem'}}>Typing Website</h3>
      <img  src='typist.jpg' className='img-fluid' style={{marginTop:'1rem',height:'20rem'}} alt='....'/>
      <NavLink to='https://my-touch-typing-app.vercel.app/' ><button className='btn btn-info' style={{marginTop:'1rem'}}><b>Click Here</b></button></NavLink>
       <div className="col" style={{marginTop:'1rem'}}>
@@ -127,7 +127,7 @@ export default function Home() {
 
     <div class="row">
     <div className="col" style={{border:'0.1rem solid white',boxShadow:'1px 1px 2px black, 0 0 25px white, 0 0 5px white'}} data-aos="fade-up" data-aos-duration="1500" >
-      <h3  style={{color:'#42ddf5'}} >Portfolio Website</h3>
+      <h3  style={{color:'lightgreen',marginTop:'0.5rem'}} >Portfolio Website</h3>
      <img src='portfool.jpg' className='img-fluid' style={{marginTop:'1rem',height:'20rem'}} alt='....' />
      <button className='btn btn-info' style={{marginTop:'1rem'}} onClick={handleclick}><b>Click Here</b></button>
       <div className="col" style={{marginTop:'1rem'}}>

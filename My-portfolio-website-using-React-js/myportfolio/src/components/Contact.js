@@ -17,6 +17,8 @@ message:"",
 
 export default function Contact() {
 
+  
+
 const {values,errors,touched,handleBlur,handleChange,handleSubmit}=useFormik({
 initialValues:initialValues,
 validationSchema:signUpSchema,
@@ -87,8 +89,9 @@ I'm interested in freelance opportunities-especially front end projects.However,
   <span className="input-group-text" id="inputGroup-sizing-default">Mobile No</span>
   <input type="text" value={values.mobile} onChange={handleChange} onBlur={handleBlur}  name="mobile" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"/>
 </div>
-{errors.mobile && touched.mobile?(<p  style={{color:'red'}}className='form-error'>{errors.mobile}</p>):null}
 <br></br>
+{errors.mobile && touched.mobile?(<p  style={{color:'red'}}className='form-error'>{errors.mobile}</p>):null}
+
 
 <div class="mb-3">
   {/* <label for="exampleFormControlInput1" className="form-label" style={{color:'white'}}>Email address</label> */}
@@ -99,8 +102,9 @@ I'm interested in freelance opportunities-especially front end projects.However,
   <label for="exampleFormControlTextarea1" className="form-label" style={{color:'white'}} >Write your message</label>
   <textarea value={values.message} onChange={handleChange} onBlur={handleBlur}  class="form-control" id="exampleFormControlTextarea1" name="message" rows="3"></textarea>
 </div>
-{errors.message && touched.message?(<p  style={{color:'red'}}className='form-error'>{errors.message}</p>):null}
 <br></br>
+{errors.message && touched.message?(<p  style={{color:'red'}}className='form-error'>{errors.message}</p>):null}
+
 <p style={{backgroundColor:'lightgreen'}} whileHover={{scale:1.2}}  onClick={handleClick}><button style={{backgroundColor:'lightgreen',border:"0.1rem solid lightgreen"}}><b><u>Send</u></b></button></p>
 
 </div></center></form>
