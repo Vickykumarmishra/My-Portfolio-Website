@@ -58,7 +58,7 @@ export default function Projects() {
     <div className="col">
       
     <div className="card" style={{width:'18rem',marginBottom:'2rem',boxShadow:'1px 1px 2px white, 0 0 25px white, 0 0 5px white'}}>
-  <img src="Portfool4.jpg" className="img-fluid" style={{height:"15rem"}} alt="..."/>
+  <img src="portfool4.jpg" className="img-fluid" style={{height:"15rem"}} alt="..."/>
   <div className="card-body">
     <h5 className="card-title" style={{color:"darkgreen"}}><b>Portfolio Website</b></h5>
     <b><p>Techstack:- React js,Javascript,Emailjs,Html and css</p></b>
