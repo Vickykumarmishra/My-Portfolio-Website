@@ -76,6 +76,13 @@ export default function Skills() {
     </div>
 
 
+    <div style={{marginBottom:"1rem"}}>
+    {/* <img src='csss.png' whileHover={{scale:'1.1'}}  style={{height:'5rem',marginLeft:'0.4rem',marginBottom:'0.4rem'}}></img> */}
+    <p style={{marginRight:'0.5rem'}}>Auth0:-</p> 
+    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-bar w-100 bg-success"></div>
+</div>
+    </div>
     </div>
     {/* <div className="col" style={{marginTop:'1rem' ,marginBottom:'2rem'}}>
       <center><img   src='formal cv image.png' className='img-fluid' style={{borderRadius:"100%",height:'15rem'}}></img></center>

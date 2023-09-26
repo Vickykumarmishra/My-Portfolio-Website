@@ -35,7 +35,7 @@ export default function Home() {
         I am a skilled Frontend Developer with a passion for crafting engaging and user-friendly web experiences.With over 2 years of expertise in React.js, JavaScript, and Redux, I have contributed to the success of various projects.My commitment to clean, efficient code and continuous learning drives my ability to deliver high-quality solutions. I thrive in collaborative environments and take pride in turning complex ideas into intuitive interfaces.
 
         </p>
-         <NavLink to='https://drive.google.com/file/d/1Mgzm8k1LcTLTs-9KwjPrwQ6IoJrYUAX1/view?usp=sharing'><motion.button  whileHover={{scale:1.2}}  className='btn btn-light' style={{backgroundColor:'yellow',color:'black',marginLeft:'1rem' ,marginTop:'1rem'}}><b>Resume</b></motion.button></NavLink>
+         <NavLink to='https://drive.google.com/file/d/1Mgzm8k1LcTLTs-9KwjPrwQ6IoJrYUAX1/view?usp=sharing'><motion.button  whileHover={{scale:1.2}}  className='btn btn-light ' style={{backgroundColor:'yellow',color:'black',marginLeft:'1rem' ,marginTop:'1rem'}}><b>Resume</b></motion.button></NavLink>
         <NavLink to="/Contact"><motion.button  whileHover={{scale:1.2}} className='btn btn-light' style={{backgroundColor:'yellow',color:'black',marginLeft:'1rem',marginTop:'1rem'}}><b>contact!</b></motion.button></NavLink>
         </div></center>
   
