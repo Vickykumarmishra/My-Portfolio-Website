@@ -9,7 +9,7 @@ export default function Navbar() {
   return (
     <div style={{marginBottom:"1rem"}}>
 
-<nav className="navbar navbar-dark bg-dark relative" style={{width:"100%"}}>
+<nav className="navbar navbar-dark bg-dark relative" >
   <div className="container-fluid">
     <NavLink className="navbar-brand" to="/Home">My Portfolio</NavLink>
     <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
