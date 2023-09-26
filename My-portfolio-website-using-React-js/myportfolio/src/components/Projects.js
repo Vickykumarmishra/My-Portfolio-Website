@@ -19,11 +19,7 @@ export default function Projects() {
     <div>
       
       <h3   style={{fontSize:"2em", color:'white',textShadow: '1px 1px 2px black, 0 0 25px lightgreen, 0 0 10px lightgreen',marginBottom:'2rem'}}>My Projects:</h3>
-<center><div class="container text-center" style={{color:'lightgreen'}}>
 
-  
-
-</div></center>
 
 
 <div className="container text-center" style={{marginBottom:"3rem"}}>
