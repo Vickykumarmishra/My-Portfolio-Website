@@ -62,7 +62,7 @@ export default function Projects() {
   <div className="card-body">
     <h5 className="card-title" style={{color:"darkgreen"}}><b>Portfolio Website</b></h5>
     <b><p>Techstack:- React js,Javascript,Emailjs,Html and css</p></b>
-    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.its anice website</p>
     <a href="#" className="btn btn-primary" onClick={handleclick}>Click Here</a>
   
   </div>
