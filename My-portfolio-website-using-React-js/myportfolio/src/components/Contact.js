@@ -69,13 +69,12 @@ else{
   return (
     <div >
      <center><h1 style={{color:'lightgreen',marginTop:'1rem'}}><b>Contact Me</b></h1></center> <br></br>
-     {/* <center><p style={{color:'white'}}>
-I'm interested in freelance opportunities-especially front end projects.However, if you have other request or question, don't hesitate to contact me.
-     </p></center> */}
+     
 
      {/**form start */}
+  
 <form ref={form} onSubmit={handleSubmit}>
-<center><div  style={{width:'25rem' , border:'0.1rem solid green', padding:'2rem',boxShadow:'1px 1px 2px white, 0 0 25px white, 0 0 5px white',backgroundColor:'black'}}   >
+<center><div  style={{width:'25rem' , border:'0.1rem solid green', padding:'2rem',boxShadow:'1px 1px 2px white, 0 0 25px white, 0 0 5px white',backgroundColor:'black'}}  className='container'  >
      <div className="input-group">
      <div className="input-group mb-3">
   <span className="input-group-text" id="inputGroup-sizing-default">FullName</span>
@@ -93,14 +92,14 @@ I'm interested in freelance opportunities-especially front end projects.However,
 {errors.mobile && touched.mobile?(<p  style={{color:'red'}}className='form-error'>{errors.mobile}</p>):null}
 
 
-<div class="mb-3">
+<div className="mb-3">
   {/* <label for="exampleFormControlInput1" className="form-label" style={{color:'white'}}>Email address</label> */}
-  <input type="email" value={values.useremail} onChange={handleChange} onBlur={handleBlur}  class="form-control" id="exampleFormControlInput1" name="useremail" placeholder="Enter your email here"/>
+  <input type="email" value={values.useremail} onChange={handleChange} onBlur={handleBlur}  className="form-control" id="exampleFormControlInput1" name="useremail" placeholder="Enter your email here"/>
 </div>
 {errors.useremail && touched.useremail?(<p  style={{color:'red'}}className='form-error'>{errors.useremail}</p>):null}
-<div class="mb-3">
+<div className="mb-3">
   <label for="exampleFormControlTextarea1" className="form-label" style={{color:'white'}} >Write your message</label>
-  <textarea value={values.message} onChange={handleChange} onBlur={handleBlur}  class="form-control" id="exampleFormControlTextarea1" name="message" rows="3"></textarea>
+  <textarea value={values.message} onChange={handleChange} onBlur={handleBlur}  className="form-control" id="exampleFormControlTextarea1" name="message" rows="3"></textarea>
 </div>
 <br></br>
 {errors.message && touched.message?(<p  style={{color:'red'}}className='form-error'>{errors.message}</p>):null}
@@ -108,6 +107,7 @@ I'm interested in freelance opportunities-especially front end projects.However,
 <p style={{backgroundColor:'lightgreen'}} whileHover={{scale:1.2}}  onClick={handleClick}><button style={{backgroundColor:'lightgreen',border:"0.1rem solid lightgreen"}}><b><u>Send</u></b></button></p>
 
 </div></center></form>
+
 {/**form ends here */}
 
 {/* <center><NavLink to='/Home'><p style={{backgroundColor:'#42ddf5',marginTop:'1rem',width:"25rem"}}><button style={{backgroundColor:'#42ddf5',border:"0.1rem solid #42ddf5"}} ><b>Go To Home -{'>'} </b></button ></p></NavLink></center> */}

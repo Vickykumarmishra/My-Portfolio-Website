@@ -22,7 +22,7 @@ export default function Home() {
 
 <Typewriter
       options={{
-        strings: ['Vicky Kumar mishra', ' a Frontend developer'],
+        strings: ['Vicky Kumar mishra', ' A Frontend Developer'],
         autoStart: true,
         loop: true,
       }}
@@ -30,9 +30,9 @@ export default function Home() {
     /></div>
         <center>
 
-        <div  style={{marginRight:'5rem',marginLeft:'5rem'}} className=''>
+        <div  style={{}} className='container'>
         <b><p style={{color:'lightgreen',fontFamily:'tahoma',marginBottom:"2rem",marginTop:'3rem'}}>
-        I am a skilled Frontend Developer with a passion for crafting engaging and user-friendly web experiences. With over [X years] of expertise in React.js, JavaScript, and Redux, I have contributed to the success of various projects. My commitment to clean, efficient code and continuous learning drives my ability to deliver high-quality solutions. I thrive in collaborative environments and take pride in turning complex ideas into intuitive interfaces.
+        I am a skilled Frontend Developer with a passion for crafting engaging and user-friendly web experiences. With over 2 years of expertise in React.js, JavaScript, and Redux, I have contributed to the success of various projects. My commitment to clean, efficient code and continuous learning drives my ability to deliver high-quality solutions. I thrive in collaborative environments and take pride in turning complex ideas into intuitive interfaces.
 
         </p></b>
          <NavLink to='https://drive.google.com/file/d/1Mgzm8k1LcTLTs-9KwjPrwQ6IoJrYUAX1/view?usp=sharing'><motion.button  whileHover={{scale:1.2}}  className='btn btn-light' style={{backgroundColor:'yellow',color:'black',marginLeft:'1rem' ,marginTop:'1rem'}}><b>Resume</b></motion.button></NavLink>
