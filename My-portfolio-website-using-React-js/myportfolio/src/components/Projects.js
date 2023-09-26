@@ -17,6 +17,8 @@ export default function Projects() {
       
        }
   return (
+
+    <center>
     <div className='container'>
       
       <h2   style={{fontSize:"3rem", color:'white',textShadow: '1px 1px 2px black, 0 0 25px lightgreen, 0 0 10px lightgreen',marginBottom:'2rem'}}>My Projects:</h2>
@@ -61,7 +63,7 @@ export default function Projects() {
     <h5 className="card-title" style={{color:"darkgreen"}}><b>Portfolio Website</b></h5>
     <b><p>Techstack:- React js,Javascript,Emailjs,Html and css</p></b>
     <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" className="btn btn-primary" onClick={handleclick}>Click Here</a>
+    <NavLink href="#" className="btn btn-primary" onClick={handleclick}>Click Here</NavLink>
   
   </div>
 </div>
@@ -71,6 +73,6 @@ export default function Projects() {
 </div>
 
 
-    </div>
+    </div></center>
   )
 }
