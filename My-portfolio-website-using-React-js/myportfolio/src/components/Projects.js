@@ -21,7 +21,7 @@ export default function Projects() {
     <center>
     <div className='container'>
       
-      <h2   style={{fontSize:"3rem", color:'white',textShadow: '1px 1px 2px black, 0 0 25px lightgreen, 0 0 10px lightgreen',marginBottom:'2rem'}}>My Projects:</h2>
+      <h2   style={{fontSize:"3rem", color:'white',textShadow: '1px 1px 2px black, 0 0 25px lightgreen, 0 0 10px lightgreen',marginBottom:'2rem',marginTop:'5rem'}}>My Projects:</h2>
 
 
 

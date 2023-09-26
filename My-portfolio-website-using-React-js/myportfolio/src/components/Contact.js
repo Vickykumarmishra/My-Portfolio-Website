@@ -68,7 +68,7 @@ else{
 
   return (
     <div  style={{marginBottom:"2rem"}}>
-     <center><h1 style={{color:'lightgreen',marginTop:'1rem'}}><b>Contact Me</b></h1></center> <br></br>
+     <center><h1 style={{color:'lightgreen',marginTop:'5rem'}}><b>Contact Me</b></h1></center> <br></br>
      
 
      {/**form start */}

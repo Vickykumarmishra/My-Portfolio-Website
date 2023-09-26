@@ -7,9 +7,9 @@ import Skills from './Skills'
 import Home from './Home'
 export default function Navbar() {
   return (
-    <div style={{marginBottom:"1rem"}}>
+    <div style={{marginBottom:"5rem"}}>
 
-<nav className="navbar navbar-dark bg-dark relative" >
+<nav className="navbar navbar-dark bg-dark fixed-top" >
   <div className="container-fluid">
     <NavLink className="navbar-brand" to="/Home">My Portfolio</NavLink>
     <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
