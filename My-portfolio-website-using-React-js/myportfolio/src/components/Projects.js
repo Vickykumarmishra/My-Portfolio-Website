@@ -57,9 +57,7 @@ export default function Projects() {
       <h3  style={{color:'lightgreen',marginTop:'0.5rem'}} >Portfolio Website</h3>
      <img src='portfool.jpg' className='img-fluid' style={{marginTop:'1rem',height:'20rem',width:"30rem"}} alt='....' />
      <button className='btn btn-info' style={{marginTop:'1rem'}} onClick={handleclick}><b>Click Here</b></button>
-      <div className="col" style={{marginTop:'1rem'}}>
       
-    </div>
     </div>
   </div>
     </div>
