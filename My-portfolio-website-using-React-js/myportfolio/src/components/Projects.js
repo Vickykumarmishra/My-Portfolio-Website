@@ -26,7 +26,7 @@ export default function Projects() {
 </div></center>
 
 
-<div className="container text-center">
+<div className="container text-center" style={{marginBottom:"3rem"}}>
   <div class="row">
     <div class="col">
     <div class="row" >
