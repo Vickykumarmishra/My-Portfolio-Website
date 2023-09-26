@@ -45,9 +45,7 @@ export default function Projects() {
      <h3   style={{color:'lightgreen',marginTop:'0.5rem'}}>Typing Website</h3>
      <img  src='typist.jpg' className='img-fluid' style={{marginTop:'1rem',height:'20rem',width:'30rem'}} alt='....'/>
      <NavLink to='https://my-touch-typing-app.vercel.app/' ><button className='btn btn-info' style={{marginTop:'1rem'}}><b>Click Here</b></button></NavLink>
-      <div className="col" style={{marginTop:'1rem'}}>
-      
-    </div>
+     
     </div>
   </div>
     </div>
@@ -57,7 +55,7 @@ export default function Projects() {
     <div class="row">
     <div className="col" style={{border:'0.1rem solid white',boxShadow:'1px 1px 2px black, 0 0 25px white, 0 0 5px white'}}  >
       <h3  style={{color:'lightgreen',marginTop:'0.5rem'}} >Portfolio Website</h3>
-     <img src='portfool.jpg' className='img-fluid' style={{marginTop:'1rem',height:'20rem'}} alt='....' />
+     <img src='portfool.jpg' className='img-fluid' style={{marginTop:'1rem',height:'20rem',width:"30rem"}} alt='....' />
      <button className='btn btn-info' style={{marginTop:'1rem'}} onClick={handleclick}><b>Click Here</b></button>
       <div className="col" style={{marginTop:'1rem'}}>
       
