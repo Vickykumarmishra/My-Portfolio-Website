@@ -15,7 +15,7 @@ export default function Skills() {
     <div className="col" style={{marginTop:'1rem',marginBottom:'2rem'}}>
     
 
-    <h3 style={{fontSize:"2rem", color:'white',textShadow: '1px 1px 2px black, 0 0 25px lightgreen, 0 0 10px lightgreen',marginBottom:"2rem"}}>My Skills:</h3>
+    <h3 style={{fontSize:"2rem", color:'white',fontFamily:'cursive' ,textShadow: '1px 1px 2px black, 0 0 25px lightgreen, 0 0 10px lightgreen',marginBottom:"2rem"}}>My Skills:</h3>
     <div className='container'  >
 
        <div style={{marginBottom:"1rem"}}>
