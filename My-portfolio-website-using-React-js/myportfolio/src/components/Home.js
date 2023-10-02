@@ -14,9 +14,9 @@ export default function Home() {
   return (
     <div >
   
-  <div className='container' style={{color:'white',fontSize:'4rem',fontFamily:'tahoma',textShadow: '1px 1px 2px black, 0 0 25px yellow, 0 0 5px yellow'}}>
+  <div className='container' style={{color:'white',fontSize:'4rem',fontFamily:'cursive',textShadow: '1px 1px 2px black, 0 0 25px yellow, 0 0 5px yellow'}}>
          <h1  
-         style={{color:'lightgreen',marginTop:"3rem"}}> <b >Hello, I am </b></h1>
+         style={{color:'lightgreen',marginTop:"3rem",fontFamily:'cursive'}}> <b >Hello, I am </b></h1>
         {/*<h1  
          style={{color:'white',fontSize:'5rem',fontFamily:'tahoma',textShadow: '1px 1px 2px black, 0 0 25px yellow, 0 0 5px yellow'}} data-aos="fade-left"  data-aos-duration="2000">Vicky Kumar Mishra</h1> */}
 
@@ -31,7 +31,7 @@ export default function Home() {
         <center>
 
         <div  style={{}} className='container'>
-        <p style={{color:'lightgreen',fontFamily:'tahoma',marginBottom:"2rem",fontSize:'1.5rem' ,marginTop:'3rem'}}>
+        <p style={{color:'lightgreen',marginBottom:"2rem",fontSize:'1.5rem' ,marginTop:'3rem',fontFamily:"cursive"}}>
         I am a skilled Frontend Developer with a passion for crafting engaging and user-friendly web experiences.With over 2 years of expertise in React.js, JavaScript, and Redux, I have contributed to the success of various projects.My commitment to clean, efficient code and continuous learning drives my ability to deliver high-quality solutions. I thrive in collaborative environments and take pride in turning complex ideas into intuitive interfaces.
 
         </p>
