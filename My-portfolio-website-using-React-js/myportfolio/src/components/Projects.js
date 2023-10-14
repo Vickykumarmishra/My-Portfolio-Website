@@ -88,7 +88,7 @@ export default function Projects() {
       <h5 className="card-title" style={{color:"darkgreen"}}><b>Travel website</b></h5>
       <b><p>Techstack:- React js,Node js, MongoDb,Javascript,Html aand css</p></b>
       <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.its anice website</p>
-      <NavLink to="https://travel-webs.vercel.app/" className="btn btn-primary">Click Here</NavLink>
+      <NavLink to="https://ride-ready-e9xs.vercel.app" className="btn btn-primary">Click Here</NavLink>
     
     </div>
   </div>
